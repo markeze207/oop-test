@@ -1,8 +1,8 @@
 <?php
 
-class News
+class News 
 {
-    public static function getNewsItemById($id)
+    public static function getNewsItemById($id) // Получает данные с одной новости
     {
         $id = intval($id);
 

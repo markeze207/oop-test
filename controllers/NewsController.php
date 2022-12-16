@@ -1,15 +1,15 @@
 <?php
 
-include_once ROOT . '/models/News.php';
+include_once ROOT . '/models/News.php'; // Подключение модели
 
 class NewsController
 {
     public function actionIndex()
     {
         $newsList = array();
-        $newsList = News::getNewsList();
+        $newsList = News::getNewsList(); // Получает данные из модели
 
-        require_once(ROOT . '/views/news/index.php');
+        require_once(ROOT . '/views/news/index.php'); // Передает их во view
 
         return true;
     }

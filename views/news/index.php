@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <?php foreach($newsList as $newsItem):?>
+    <?php foreach($newsList as $newsItem): // выводит данные, полученные с контрллера, который получил эти данные с модели?> 
         <p><?=$newsItem['title']?></p>
         <br>
         <br>
